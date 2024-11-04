@@ -1,8 +1,0 @@
-
-]	java:S125"<This block of commented-out lines of code should be removed.(¯½üùÿÿÿÿ8³Ìß¢2
-}
-java:S1128":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8œ†äŒ¢2J$fbe821b9-5291-46c1-a338-0c718acdac42
-f
-java:S1128"DRemove this unused import 'org.openqa.selenium.support.PageFactory'.(çáëşÿÿÿÿ8¶Ìß¢2
-}
-java:S1128	";Remove this unused import 'org.testng.Assert.assertEquals'.(ü¥ª8†äŒ¢2J$efd7d178-a8c1-4557-b95c-4ae899f9db70
