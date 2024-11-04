@@ -1,0 +1,3 @@
+response.sold	[>=1]
+response.pending	[>=0]
+response.available	[>=0]

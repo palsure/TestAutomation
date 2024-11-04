@@ -1,0 +1,61 @@
+INFO : 
+Given I set baseurl for inventory serviceINFO INFO : -------------- Creating Request -------------------INFO INFO : API Request URL: https://petstore.swagger.io/v2/INFO : 
+Given I set request JSON from getUserRequestJsINFO : Request URI: https://petstore.swagger.io/v2/store/inventory
+INFO : Submitting GET request
+INFO : -------------- Response -----------------------
+INFO : {
+    "sold": 24,
+    "teststa5": 316,
+    "string": 384,
+    "nqHqMn7a6q": 1,
+    "zj{{print \"9615\" \"2521\"}}zj": 1,
+    "inZFWHj6l3": 1,
+    "pending": 4,
+    "available": 125,
+    "Y70tBSQxVq": 1,
+    "есть": 10,
+    "rpXzxg6amU": 1,
+    "status": 11
+}
+INFO : Response Time: 1453 ms
+INFO : 
+Then I see response status 200
+---
+INFO : -------------- Response Validation -----------------------
+INFO : Response status assertion: Actual = 200; Expected = 200
+INFO : 
+Then I see matches for fields | sold      | [>=]1 |
+| pending   | [>=]0 |
+| available | [>=]0 |
+
+---
+INFO : Getting value of JSON path: available 
+INFO : Value for jsonpath: 'available' is: '125'
+INFO : Response body assertion for jsonpath 'available':
+INFO : Getting value of JSON path: sold 
+INFO : Value for jsonpath: 'sold' is: '24'
+INFO : Response body assertion for jsonpath 'sold':
+INFO : Getting value of JSON path: pending 
+INFO : Value for jsonpath: 'pending' is: '4'
+INFO : Response body assertion for jsonpath 'pending':
+ : Response Time: 1362 ms
+INFO : 
+Then I see response status 200
+---
+INFO : -------------- Response Validation -----------------------
+INFO : Response status assertion: Actual = 200; Expected = 200
+INFO : 
+Then I see matches for fields | code    | 200      |
+| type    | [string] |
+| message | [string] |
+
+---
+INFO : Getting value of JSON path: type 
+INFO : Value for jsonpath: 'type' is: 'unknown'
+INFO : Response body assertion for jsonpath 'type':
+INFO : Getting value of JSON path: message 
+INFO : Value for jsonpath: 'message' is: '406'
+INFO : Response body assertion for jsonpath 'message':
+INFO : Getting value of JSON path: code 
+INFO : Value for jsonpath: 'code' is: '200'
+INFO : Response body assertion for jsonpath 'code':
